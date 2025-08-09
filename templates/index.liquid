@@ -1,0 +1,26 @@
+{% comment %}
+  The homepage template
+{% endcomment %}
+
+{%- assign hero_section = section.settings -%}
+
+{% section 'hero' %}
+{% section 'featured-products' %}
+{% section 'features' %}
+{% section 'newsletter' %}
+
+{% schema %}
+{
+  "name": "Homepage",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Homepage sections"
+    },
+    {
+      "type": "paragraph",
+      "content": "Customize the sections shown on your homepage by editing this template or using the theme editor."
+    }
+  ]
+}
+{% endschema %}
